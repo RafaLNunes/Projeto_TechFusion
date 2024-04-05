@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmhomeprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmhomeprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmhomeinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmhomeinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmhomeinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmhomeinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\Program.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\Program.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\Program.cs",
+              "RelativeToolTip": "TechFusion_Vendas\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:56:30.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmHomePrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmHomePrincipal.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmHomePrincipal.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmHomePrincipal.cs [Projeto]",
+              "RelativeToolTip": "TechFusion_Vendas\\FrmHomePrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:53:16.59Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmHomeInicial.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmHomeInicial.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmHomeInicial.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmHomeInicial.cs",
+              "RelativeToolTip": "TechFusion_Vendas\\FrmHomeInicial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:24:22.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmHomeInicial.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmHomeInicial.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmHomeInicial.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmHomeInicial.cs [Projeto]",
+              "RelativeToolTip": "TechFusion_Vendas\\FrmHomeInicial.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:16:58.646Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
