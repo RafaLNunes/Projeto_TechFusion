@@ -43,7 +43,7 @@ create table Historico_pedidos(
     CFK_prod int,
     CFK_User int,
     constraint FK_user foreign key (CFK_User) references usuario(Cod_usuario),
-    constraint FK_prod foreign key (CFK_prod)references produto(Cod_prod)
+    constraint FK_prods foreign key (CFK_prod)references produto(Cod_prod)
 );
 
 insert into perfil(cargo) values("ADM"), ("Gerente"), ("Cliente"),("Revendedor"),("Técnico");
@@ -54,4 +54,5 @@ select * from produto;
 select * from perfil;
 select * from usuario;
 -- select * from
+
 
