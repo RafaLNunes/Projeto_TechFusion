@@ -21,5 +21,32 @@ namespace TechFusion_Vendas
         {
             Application.Exit();
         }
+
+        private void FrmSoftware_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SideBarTimer_Tick(object sender, EventArgs e)
+        {
+            if (sidebarbool)
+            {
+                SideBar.Width -= 10;
+                if (SideBar.Width == SideBar.MinimumSize.Width)
+                {
+                    sidebarbool = false;
+                    SideBarTimer.Stop();
+                }
+            }
+            else
+            {
+                SideBar.Width += 10;
+                if (SideBar.Width == SideBar.MaximumSize.Width)
+                {
+                    sidebarbool = true;
+                    SideBarTimer.Stop();
+                }
+            }
+        }
     }
 }

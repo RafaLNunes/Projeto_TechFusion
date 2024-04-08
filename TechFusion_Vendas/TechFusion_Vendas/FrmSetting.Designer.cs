@@ -117,6 +117,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // HomePainel
             // 
@@ -210,6 +211,7 @@
             button2.Text = "        Home";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // salepainel
             // 
@@ -359,6 +361,7 @@
             button7.Text = "        Sale";
             button7.TextAlign = ContentAlignment.MiddleLeft;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // panel4
             // 
@@ -417,14 +420,17 @@
             // SideBarTimer
             // 
             SideBarTimer.Interval = 2;
+            SideBarTimer.Tick += SideBarTimer_Tick;
             // 
             // HomeTimer
             // 
             HomeTimer.Interval = 2;
+            HomeTimer.Tick += HomeTimer_Tick;
             // 
             // SaleTimer
             // 
             SaleTimer.Interval = 2;
+            SaleTimer.Tick += SaleTimer_Tick;
             // 
             // FrmSetting
             // 
@@ -440,6 +446,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmSetting";
             FormClosed += FrmSetting_FormClosed;
+            Load += FrmSetting_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
