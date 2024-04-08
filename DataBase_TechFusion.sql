@@ -46,6 +46,7 @@ create table Historico_pedidos(
     constraint FK_prods foreign key (CFK_prod)references produto(Cod_prod)
 );
 
+
 insert into perfil(cargo) values("ADM"), ("Gerente"), ("Cliente"),("Revendedor"),("Técnico");
 insert into fornecedor(nome_fornc, Local_trabalho) values ("Adam", "SESI"), ("Gabriel", "SENAI"), ("Rafael", "FIEP");
 
