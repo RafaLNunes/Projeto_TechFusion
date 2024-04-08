@@ -4,7 +4,16 @@
     <Compile Update="FrmAviso.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmCloud.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Frmexplicacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmExplicacaoprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmHardware.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmHomeInicial.cs">
@@ -13,7 +22,19 @@
     <Compile Update="FrmHomePrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmRedes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmUserInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmUserPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

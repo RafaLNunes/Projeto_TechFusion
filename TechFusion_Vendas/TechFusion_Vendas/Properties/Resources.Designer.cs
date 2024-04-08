@@ -63,6 +63,16 @@ namespace TechFusion_Vendas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_configurações {
+            get {
+                object obj = ResourceManager.GetObject("icons8-configurações", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wired_lineal_112_book {
             get {
                 object obj = ResourceManager.GetObject("wired-lineal-112-book", resourceCulture);
@@ -83,9 +93,79 @@ namespace TechFusion_Vendas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1309_load_balancer {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1309-load-balancer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wired_lineal_1326_command_window_line__1_ {
             get {
                 object obj = ResourceManager.GetObject("wired-lineal-1326-command-window-line (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1330_rest_api {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1330-rest-api", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1330_rest_api__1_ {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1330-rest-api (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1330_rest_api__2_ {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1330-rest-api (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1330_rest_api__3_ {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1330-rest-api (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1330_rest_api__4_ {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1330-rest-api (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_1331_repository {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-1331-repository", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +203,39 @@ namespace TechFusion_Vendas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_27_globe {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-27-globe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_57_server {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-57-server", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wired_lineal_63_home__1_ {
             get {
                 object obj = ResourceManager.GetObject("wired-lineal-63-home (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wired_lineal_726_wireless_connection {
+            get {
+                object obj = ResourceManager.GetObject("wired-lineal-726-wireless-connection", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

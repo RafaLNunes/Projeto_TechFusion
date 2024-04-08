@@ -42,10 +42,7 @@
             button2 = new Button();
             panel4 = new Panel();
             button3 = new Button();
-            SideBarTimer = new System.Windows.Forms.Timer(components);
-            HomeTimer = new System.Windows.Forms.Timer(components);
-            SellTimer = new System.Windows.Forms.Timer(components);
-            panel2 = new Panel();
+            salepainel = new Panel();
             panel10 = new Panel();
             button8 = new Button();
             panel5 = new Panel();
@@ -58,6 +55,9 @@
             button7 = new Button();
             panel12 = new Panel();
             button10 = new Button();
+            SideBarTimer = new System.Windows.Forms.Timer(components);
+            HomeTimer = new System.Windows.Forms.Timer(components);
+            SaleTimer = new System.Windows.Forms.Timer(components);
             SideBar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -66,7 +66,7 @@
             panel6.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            panel2.SuspendLayout();
+            salepainel.SuspendLayout();
             panel10.SuspendLayout();
             panel5.SuspendLayout();
             panel11.SuspendLayout();
@@ -79,6 +79,10 @@
             // 
             SideBar.BackColor = Color.FromArgb(189, 217, 223);
             SideBar.Controls.Add(panel1);
+            SideBar.Controls.Add(HomePainel);
+            SideBar.Controls.Add(salepainel);
+            SideBar.Controls.Add(panel4);
+            SideBar.Controls.Add(panel12);
             SideBar.Dock = DockStyle.Left;
             SideBar.Location = new Point(0, 0);
             SideBar.MaximumSize = new Size(270, 828);
@@ -117,17 +121,18 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // HomePainel
             // 
             HomePainel.Controls.Add(panel7);
             HomePainel.Controls.Add(panel6);
             HomePainel.Controls.Add(panel3);
-            HomePainel.Location = new Point(645, 69);
+            HomePainel.Location = new Point(3, 113);
             HomePainel.MaximumSize = new Size(266, 177);
             HomePainel.MinimumSize = new Size(266, 75);
             HomePainel.Name = "HomePainel";
-            HomePainel.Size = new Size(266, 177);
+            HomePainel.Size = new Size(266, 75);
             HomePainel.TabIndex = 4;
             // 
             // panel7
@@ -156,6 +161,7 @@
             button5.Text = "        How it works";
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel6
             // 
@@ -183,6 +189,7 @@
             button4.Text = "        About Us";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel3
             // 
@@ -210,12 +217,13 @@
             button2.Text = "        Home";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(189, 217, 223);
             panel4.Controls.Add(button3);
-            panel4.Location = new Point(325, 69);
+            panel4.Location = new Point(3, 275);
             panel4.Name = "panel4";
             panel4.Size = new Size(266, 75);
             panel4.TabIndex = 3;
@@ -237,32 +245,21 @@
             button3.Text = "        User";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
-            // SideBarTimer
+            // salepainel
             // 
-            SideBarTimer.Interval = 2;
-            // 
-            // HomeTimer
-            // 
-            HomeTimer.Interval = 2;
-            // 
-            // SellTimer
-            // 
-            SellTimer.Interval = 2;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(panel10);
-            panel2.Controls.Add(panel5);
-            panel2.Controls.Add(panel11);
-            panel2.Controls.Add(panel8);
-            panel2.Controls.Add(panel9);
-            panel2.Location = new Point(951, 70);
-            panel2.MaximumSize = new Size(266, 277);
-            panel2.MinimumSize = new Size(266, 75);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(266, 277);
-            panel2.TabIndex = 5;
+            salepainel.Controls.Add(panel10);
+            salepainel.Controls.Add(panel5);
+            salepainel.Controls.Add(panel11);
+            salepainel.Controls.Add(panel8);
+            salepainel.Controls.Add(panel9);
+            salepainel.Location = new Point(3, 194);
+            salepainel.MaximumSize = new Size(266, 277);
+            salepainel.MinimumSize = new Size(266, 75);
+            salepainel.Name = "salepainel";
+            salepainel.Size = new Size(266, 75);
+            salepainel.TabIndex = 5;
             // 
             // panel10
             // 
@@ -280,7 +277,7 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button8.ForeColor = Color.White;
-            button8.Image = Properties.Resources.wired_lineal_187_suitcase;
+            button8.Image = Properties.Resources.wired_lineal_1331_repository;
             button8.ImageAlign = ContentAlignment.MiddleLeft;
             button8.Location = new Point(0, -56);
             button8.Margin = new Padding(3, 4, 3, 4);
@@ -290,6 +287,7 @@
             button8.Text = "        Cloud";
             button8.TextAlign = ContentAlignment.MiddleLeft;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel5
             // 
@@ -307,7 +305,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.wired_lineal_187_suitcase;
+            button1.Image = Properties.Resources.wired_lineal_57_server;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(0, -56);
             button1.Margin = new Padding(3, 4, 3, 4);
@@ -317,6 +315,7 @@
             button1.Text = "        Redes";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel11
             // 
@@ -334,7 +333,7 @@
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button9.ForeColor = Color.White;
-            button9.Image = Properties.Resources.wired_lineal_112_book1;
+            button9.Image = Properties.Resources.wired_lineal_27_globe;
             button9.ImageAlign = ContentAlignment.MiddleLeft;
             button9.Location = new Point(0, -56);
             button9.Margin = new Padding(3, 4, 3, 4);
@@ -344,6 +343,7 @@
             button9.Text = "        Hardware";
             button9.TextAlign = ContentAlignment.MiddleLeft;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // panel8
             // 
@@ -361,16 +361,17 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
-            button6.Image = Properties.Resources.wired_lineal_112_book1;
+            button6.Image = Properties.Resources.wired_lineal_726_wireless_connection;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
             button6.Location = new Point(0, -56);
             button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
             button6.Size = new Size(266, 163);
             button6.TabIndex = 2;
-            button6.Text = "        software";
+            button6.Text = "        Software";
             button6.TextAlign = ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel9
             // 
@@ -395,15 +396,16 @@
             button7.Name = "button7";
             button7.Size = new Size(266, 163);
             button7.TabIndex = 2;
-            button7.Text = "        Home";
+            button7.Text = "        Sale";
             button7.TextAlign = ContentAlignment.MiddleLeft;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(189, 217, 223);
             panel12.Controls.Add(button10);
-            panel12.Location = new Point(308, 299);
+            panel12.Location = new Point(3, 356);
             panel12.Name = "panel12";
             panel12.Size = new Size(266, 75);
             panel12.TabIndex = 6;
@@ -415,7 +417,7 @@
             button10.FlatStyle = FlatStyle.Flat;
             button10.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button10.ForeColor = Color.White;
-            button10.Image = Properties.Resources.wired_lineal_21_avatar;
+            button10.Image = Properties.Resources.wired_lineal_1330_rest_api__4_;
             button10.ImageAlign = ContentAlignment.MiddleLeft;
             button10.Location = new Point(0, -41);
             button10.Margin = new Padding(3, 4, 3, 4);
@@ -425,20 +427,33 @@
             button10.Text = "        Setting";
             button10.TextAlign = ContentAlignment.MiddleLeft;
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
+            // 
+            // SideBarTimer
+            // 
+            SideBarTimer.Interval = 2;
+            SideBarTimer.Tick += SideBarTimer_Tick;
+            // 
+            // HomeTimer
+            // 
+            HomeTimer.Interval = 2;
+            HomeTimer.Tick += HomeTimer_Tick;
+            // 
+            // SaleTimer
+            // 
+            SaleTimer.Interval = 2;
+            SaleTimer.Tick += SaleTimer_Tick;
             // 
             // FrmHomePrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 828);
-            Controls.Add(panel12);
-            Controls.Add(panel2);
             Controls.Add(SideBar);
-            Controls.Add(HomePainel);
-            Controls.Add(panel4);
             Name = "FrmHomePrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmHomePrincipal";
+            Load += FrmHomePrincipal_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -448,7 +463,7 @@
             panel6.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            salepainel.ResumeLayout(false);
             panel10.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel11.ResumeLayout(false);
@@ -475,8 +490,8 @@
         private Button button3;
         private System.Windows.Forms.Timer SideBarTimer;
         private System.Windows.Forms.Timer HomeTimer;
-        private System.Windows.Forms.Timer SellTimer;
-        private Panel panel2;
+        private System.Windows.Forms.Timer SaleTimer;
+        private Panel salepainel;
         private Panel panel10;
         private Button button8;
         private Panel panel5;
