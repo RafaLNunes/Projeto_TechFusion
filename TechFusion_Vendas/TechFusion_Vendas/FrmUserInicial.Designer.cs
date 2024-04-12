@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUserInicial));
             SideBar = new FlowLayoutPanel();
             panel1 = new Panel();
             label1 = new Label();
@@ -47,13 +48,17 @@
             painelflow = new FlowLayoutPanel();
             panel2 = new Panel();
             panelLogIn = new Panel();
-            textBox2 = new TextBox();
+            linkLabel1 = new LinkLabel();
+            label5 = new Label();
+            PBvisiblePassword = new PictureBox();
+            textpassword = new TextBox();
             label4 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            textuser = new TextBox();
             panel5 = new Panel();
             button1 = new Button();
+            ListaVisiblepass = new ImageList(components);
             SideBar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -64,6 +69,7 @@
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             panelLogIn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PBvisiblePassword).BeginInit();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
@@ -271,11 +277,14 @@
             panelLogIn.Anchor = AnchorStyles.None;
             panelLogIn.BackgroundImage = Properties.Resources.simsimsimsimsimsismsimsisimsimsismsimsimsims_removebg_preview__1_;
             panelLogIn.BackgroundImageLayout = ImageLayout.Stretch;
-            panelLogIn.Controls.Add(textBox2);
+            panelLogIn.Controls.Add(linkLabel1);
+            panelLogIn.Controls.Add(label5);
+            panelLogIn.Controls.Add(PBvisiblePassword);
+            panelLogIn.Controls.Add(textpassword);
             panelLogIn.Controls.Add(label4);
             panelLogIn.Controls.Add(label2);
             panelLogIn.Controls.Add(label3);
-            panelLogIn.Controls.Add(textBox1);
+            panelLogIn.Controls.Add(textuser);
             panelLogIn.Controls.Add(panel5);
             panelLogIn.Location = new Point(50, 133);
             panelLogIn.Name = "panelLogIn";
@@ -283,15 +292,52 @@
             panelLogIn.TabIndex = 0;
             panelLogIn.Paint += panelLogIn_Paint;
             // 
-            // textBox2
+            // linkLabel1
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.BackColor = Color.FromArgb(216, 216, 216);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(67, 309);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(254, 20);
-            textBox2.TabIndex = 8;
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel1.Location = new Point(168, 353);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(104, 23);
+            linkLabel1.TabIndex = 10;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Clique Aqui";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(23, 353);
+            label5.Name = "label5";
+            label5.Size = new Size(149, 23);
+            label5.TabIndex = 9;
+            label5.Text = "Não possui Conta";
+            // 
+            // PBvisiblePassword
+            // 
+            PBvisiblePassword.BackColor = Color.Transparent;
+            PBvisiblePassword.Image = Properties.Resources.visivel_320;
+            PBvisiblePassword.Location = new Point(255, 290);
+            PBvisiblePassword.Name = "PBvisiblePassword";
+            PBvisiblePassword.Size = new Size(66, 46);
+            PBvisiblePassword.SizeMode = PictureBoxSizeMode.Zoom;
+            PBvisiblePassword.TabIndex = 7;
+            PBvisiblePassword.TabStop = false;
+            PBvisiblePassword.Click += pictureBox2_Click;
+            // 
+            // textpassword
+            // 
+            textpassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textpassword.BackColor = Color.FromArgb(216, 216, 216);
+            textpassword.BorderStyle = BorderStyle.None;
+            textpassword.Location = new Point(67, 309);
+            textpassword.Name = "textpassword";
+            textpassword.PasswordChar = '•';
+            textpassword.Size = new Size(189, 20);
+            textpassword.TabIndex = 8;
             // 
             // label4
             // 
@@ -332,15 +378,15 @@
             label3.TabIndex = 6;
             label3.Text = "UserName";
             // 
-            // textBox1
+            // textuser
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.BackColor = Color.FromArgb(216, 216, 216);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(67, 212);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(254, 20);
-            textBox1.TabIndex = 4;
+            textuser.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textuser.BackColor = Color.FromArgb(216, 216, 216);
+            textuser.BorderStyle = BorderStyle.None;
+            textuser.Location = new Point(67, 212);
+            textuser.Name = "textuser";
+            textuser.Size = new Size(254, 20);
+            textuser.TabIndex = 4;
             // 
             // panel5
             // 
@@ -364,6 +410,15 @@
             button1.TabIndex = 2;
             button1.Text = "Log In";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // ListaVisiblepass
+            // 
+            ListaVisiblepass.ColorDepth = ColorDepth.Depth32Bit;
+            ListaVisiblepass.ImageStream = (ImageListStreamer)resources.GetObject("ListaVisiblepass.ImageStream");
+            ListaVisiblepass.TransparentColor = Color.Transparent;
+            ListaVisiblepass.Images.SetKeyName(0, "olho 320.png");
+            ListaVisiblepass.Images.SetKeyName(1, "visivel 320.png");
             // 
             // FrmUserInicial
             // 
@@ -391,6 +446,7 @@
             panel2.ResumeLayout(false);
             panelLogIn.ResumeLayout(false);
             panelLogIn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PBvisiblePassword).EndInit();
             panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -420,7 +476,11 @@
         private Button button1;
         private Label label4;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textuser;
+        private TextBox textpassword;
+        private PictureBox PBvisiblePassword;
+        private ImageList ListaVisiblepass;
+        private LinkLabel linkLabel1;
+        private Label label5;
     }
 }

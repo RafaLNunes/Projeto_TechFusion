@@ -116,7 +116,17 @@ namespace TechFusion_Vendas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ClConnection conn = new ClConnection();
+            if (conn.GetConnection() != null)
+            {
+                MessageBox.Show("Conexão Estabelecida");
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Foi computado que a conexão com a DataBase não funcionou\nPor isso a Aplicação será Fechada");
+                Application.Exit();
+            }
         }
     }
 }

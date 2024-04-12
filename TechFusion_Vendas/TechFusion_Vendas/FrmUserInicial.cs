@@ -12,6 +12,7 @@ namespace TechFusion_Vendas
 {
     public partial class FrmUserInicial : Form
     {
+        bool passwordchard;
         bool sidebarbool;
         bool homebool;
         public FrmUserInicial()
@@ -111,6 +112,35 @@ namespace TechFusion_Vendas
         private void panelLogIn_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (passwordchard)
+            {
+                passwordchard = false;
+                textpassword.PasswordChar = '•';
+                PBvisiblePassword.Image = ListaVisiblepass.Images[1];
+            }
+            else
+            {
+                passwordchard = true;
+                textpassword.PasswordChar = '\0';
+                PBvisiblePassword.Image = ListaVisiblepass.Images[0];
+
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmUserSignUp signup = new FrmUserSignUp();
+            this.Hide();
+            signup.ShowDialog();
         }
     }
 }
