@@ -50,12 +50,18 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
             panel5 = new Panel();
+            textuser = new TextBox();
+            PBvisiblePassword = new PictureBox();
+            textpassword = new TextBox();
             clRouderpb1 = new DB_CSharp_Origin.clRouderPB();
             panel9 = new Panel();
             button6 = new Button();
             panel8 = new Panel();
             button1 = new Button();
             label2 = new Label();
+            CBperfil = new ComboBox();
+            textname = new TextBox();
+            CBidade = new ComboBox();
             SideBar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -66,6 +72,7 @@
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PBvisiblePassword).BeginInit();
             ((System.ComponentModel.ISupportInitialize)clRouderpb1).BeginInit();
             panel9.SuspendLayout();
             panel8.SuspendLayout();
@@ -292,6 +299,12 @@
             // 
             panel5.BackgroundImage = Properties.Resources.dasfghjkl_removebg_preview__1_;
             panel5.BackgroundImageLayout = ImageLayout.Zoom;
+            panel5.Controls.Add(CBidade);
+            panel5.Controls.Add(textname);
+            panel5.Controls.Add(CBperfil);
+            panel5.Controls.Add(textuser);
+            panel5.Controls.Add(PBvisiblePassword);
+            panel5.Controls.Add(textpassword);
             panel5.Controls.Add(clRouderpb1);
             panel5.Controls.Add(panel9);
             panel5.Controls.Add(panel8);
@@ -301,12 +314,45 @@
             panel5.Size = new Size(637, 530);
             panel5.TabIndex = 0;
             // 
+            // textuser
+            // 
+            textuser.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textuser.BackColor = Color.FromArgb(216, 216, 216);
+            textuser.BorderStyle = BorderStyle.None;
+            textuser.Location = new Point(35, 401);
+            textuser.Name = "textuser";
+            textuser.Size = new Size(332, 20);
+            textuser.TabIndex = 5;
+            // 
+            // PBvisiblePassword
+            // 
+            PBvisiblePassword.BackColor = Color.Transparent;
+            PBvisiblePassword.Image = Properties.Resources.visivel_320;
+            PBvisiblePassword.Location = new Point(301, 469);
+            PBvisiblePassword.Name = "PBvisiblePassword";
+            PBvisiblePassword.Size = new Size(66, 46);
+            PBvisiblePassword.SizeMode = PictureBoxSizeMode.Zoom;
+            PBvisiblePassword.TabIndex = 9;
+            PBvisiblePassword.TabStop = false;
+            PBvisiblePassword.Click += PBvisiblePassword_Click;
+            // 
+            // textpassword
+            // 
+            textpassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textpassword.BackColor = Color.FromArgb(216, 216, 216);
+            textpassword.BorderStyle = BorderStyle.None;
+            textpassword.Location = new Point(35, 487);
+            textpassword.Name = "textpassword";
+            textpassword.PasswordChar = '•';
+            textpassword.Size = new Size(267, 20);
+            textpassword.TabIndex = 10;
+            // 
             // clRouderpb1
             // 
             clRouderpb1.BackColor = Color.Transparent;
             clRouderpb1.Location = new Point(373, 12);
             clRouderpb1.Name = "clRouderpb1";
-            clRouderpb1.Size = new Size(228, 228);
+            clRouderpb1.Size = new Size(228, 226);
             clRouderpb1.SizeMode = PictureBoxSizeMode.Zoom;
             clRouderpb1.TabIndex = 6;
             clRouderpb1.TabStop = false;
@@ -371,6 +417,36 @@
             label2.TabIndex = 1;
             label2.Text = "Sign Up";
             // 
+            // CBperfil
+            // 
+            CBperfil.BackColor = Color.FromArgb(216, 216, 216);
+            CBperfil.FlatStyle = FlatStyle.Flat;
+            CBperfil.FormattingEnabled = true;
+            CBperfil.Location = new Point(382, 259);
+            CBperfil.Name = "CBperfil";
+            CBperfil.Size = new Size(233, 28);
+            CBperfil.TabIndex = 11;
+            // 
+            // textname
+            // 
+            textname.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textname.BackColor = Color.FromArgb(216, 216, 216);
+            textname.BorderStyle = BorderStyle.None;
+            textname.Location = new Point(35, 218);
+            textname.Name = "textname";
+            textname.Size = new Size(332, 20);
+            textname.TabIndex = 12;
+            // 
+            // CBidade
+            // 
+            CBidade.BackColor = Color.FromArgb(216, 216, 216);
+            CBidade.FlatStyle = FlatStyle.Flat;
+            CBidade.FormattingEnabled = true;
+            CBidade.Location = new Point(35, 299);
+            CBidade.Name = "CBidade";
+            CBidade.Size = new Size(332, 28);
+            CBidade.TabIndex = 13;
+            // 
             // FrmUserSignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -396,6 +472,7 @@
             panel2.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PBvisiblePassword).EndInit();
             ((System.ComponentModel.ISupportInitialize)clRouderpb1).EndInit();
             panel9.ResumeLayout(false);
             panel8.ResumeLayout(false);
@@ -430,5 +507,11 @@
         private Panel panel8;
         private Button button1;
         private DB_CSharp_Origin.clRouderPB clRouderpb1;
+        private PictureBox PBvisiblePassword;
+        private TextBox textpassword;
+        private TextBox textuser;
+        private ComboBox CBperfil;
+        private ComboBox CBidade;
+        private TextBox textname;
     }
 }

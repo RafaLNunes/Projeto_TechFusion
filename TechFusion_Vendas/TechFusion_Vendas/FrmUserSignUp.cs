@@ -126,9 +126,27 @@ namespace TechFusion_Vendas
                     Cam_FT = ft.FileName.Replace("\\", "\\\\");
 
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void PBvisiblePassword_Click(object sender, EventArgs e)
+        {
+            if (passwordchard)
+            {
+                passwordchard = false;
+                textpassword.PasswordChar = '•';
+                PBvisiblePassword.Image = ListaVisiblepass.Images[1];
+            }
+            else
+            {
+                passwordchard = true;
+                textpassword.PasswordChar = '\0';
+                PBvisiblePassword.Image = ListaVisiblepass.Images[0];
+
             }
         }
     }
