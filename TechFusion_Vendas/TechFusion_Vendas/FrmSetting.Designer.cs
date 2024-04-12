@@ -79,6 +79,10 @@
             // 
             SideBar.BackColor = Color.FromArgb(189, 217, 223);
             SideBar.Controls.Add(panel1);
+            SideBar.Controls.Add(HomePainel);
+            SideBar.Controls.Add(salepainel);
+            SideBar.Controls.Add(panel4);
+            SideBar.Controls.Add(panel12);
             SideBar.Dock = DockStyle.Left;
             SideBar.Location = new Point(0, 0);
             SideBar.MaximumSize = new Size(270, 828);
@@ -124,11 +128,11 @@
             HomePainel.Controls.Add(panel7);
             HomePainel.Controls.Add(panel6);
             HomePainel.Controls.Add(panel3);
-            HomePainel.Location = new Point(333, 61);
+            HomePainel.Location = new Point(3, 113);
             HomePainel.MaximumSize = new Size(266, 177);
             HomePainel.MinimumSize = new Size(266, 75);
             HomePainel.Name = "HomePainel";
-            HomePainel.Size = new Size(266, 177);
+            HomePainel.Size = new Size(266, 75);
             HomePainel.TabIndex = 4;
             // 
             // panel7
@@ -157,6 +161,7 @@
             button5.Text = "        How it works";
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel6
             // 
@@ -184,6 +189,7 @@
             button4.Text = "        About Us";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel3
             // 
@@ -220,11 +226,11 @@
             salepainel.Controls.Add(panel11);
             salepainel.Controls.Add(panel8);
             salepainel.Controls.Add(panel9);
-            salepainel.Location = new Point(333, 264);
+            salepainel.Location = new Point(3, 194);
             salepainel.MaximumSize = new Size(266, 277);
             salepainel.MinimumSize = new Size(266, 75);
             salepainel.Name = "salepainel";
-            salepainel.Size = new Size(266, 277);
+            salepainel.Size = new Size(266, 75);
             salepainel.TabIndex = 5;
             // 
             // panel10
@@ -253,6 +259,7 @@
             button8.Text = "        Cloud";
             button8.TextAlign = ContentAlignment.MiddleLeft;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel5
             // 
@@ -280,6 +287,7 @@
             button1.Text = "        Redes";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel11
             // 
@@ -307,6 +315,7 @@
             button9.Text = "        Hardware";
             button9.TextAlign = ContentAlignment.MiddleLeft;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // panel8
             // 
@@ -334,6 +343,7 @@
             button6.Text = "        Software";
             button6.TextAlign = ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel9
             // 
@@ -367,7 +377,7 @@
             // 
             panel4.BackColor = Color.FromArgb(189, 217, 223);
             panel4.Controls.Add(button3);
-            panel4.Location = new Point(323, 644);
+            panel4.Location = new Point(3, 275);
             panel4.Name = "panel4";
             panel4.Size = new Size(266, 75);
             panel4.TabIndex = 3;
@@ -389,12 +399,13 @@
             button3.Text = "        User";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(189, 217, 223);
             panel12.Controls.Add(button10);
-            panel12.Location = new Point(323, 725);
+            panel12.Location = new Point(3, 356);
             panel12.Name = "panel12";
             panel12.Size = new Size(266, 75);
             panel12.TabIndex = 6;
@@ -416,6 +427,7 @@
             button10.Text = "        Setting";
             button10.TextAlign = ContentAlignment.MiddleLeft;
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // SideBarTimer
             // 
@@ -438,10 +450,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 828);
             Controls.Add(SideBar);
-            Controls.Add(HomePainel);
-            Controls.Add(salepainel);
-            Controls.Add(panel12);
-            Controls.Add(panel4);
             Name = "FrmSetting";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmSetting";

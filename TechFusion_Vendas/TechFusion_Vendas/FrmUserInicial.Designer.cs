@@ -243,6 +243,7 @@
             Name = "FrmUserInicial";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmUserInicial";
+            FormClosed += FrmUserInicial_FormClosed;
             Load += FrmUserInicial_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);

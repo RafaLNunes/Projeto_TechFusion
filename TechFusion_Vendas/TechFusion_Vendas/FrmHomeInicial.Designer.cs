@@ -244,6 +244,7 @@
             Name = "FrmHomeInicial";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
+            FormClosed += FrmHomeInicial_FormClosed;
             Load += FrmHomeInicial_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);

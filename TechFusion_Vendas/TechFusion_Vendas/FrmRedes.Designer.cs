@@ -454,6 +454,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmRedes";
             FormClosed += FrmRedes_FormClosed;
+            Load += FrmRedes_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

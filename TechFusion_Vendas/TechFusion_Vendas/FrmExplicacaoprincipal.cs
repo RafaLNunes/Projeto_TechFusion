@@ -164,5 +164,10 @@ namespace TechFusion_Vendas
             this.Hide();
             setting.ShowDialog();
         }
+
+        private void FrmExplicacaoprincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

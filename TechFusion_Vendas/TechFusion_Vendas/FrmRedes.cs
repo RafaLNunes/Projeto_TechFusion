@@ -162,5 +162,10 @@ namespace TechFusion_Vendas
             this.Hide();
             setting.ShowDialog();
         }
+
+        private void FrmRedes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

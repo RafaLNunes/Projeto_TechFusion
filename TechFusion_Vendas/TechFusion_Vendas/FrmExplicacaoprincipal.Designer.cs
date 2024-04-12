@@ -454,6 +454,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmExplicacaoprincipal";
             FormClosed += FrmExplicacaoprincipal_FormClosed;
+            Load += FrmExplicacaoprincipal_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

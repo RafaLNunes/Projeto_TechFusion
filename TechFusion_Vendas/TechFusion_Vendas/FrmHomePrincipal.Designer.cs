@@ -40,8 +40,6 @@
             button4 = new Button();
             panel3 = new Panel();
             button2 = new Button();
-            panel4 = new Panel();
-            button3 = new Button();
             salepainel = new Panel();
             panel10 = new Panel();
             button8 = new Button();
@@ -53,6 +51,8 @@
             button6 = new Button();
             panel9 = new Panel();
             button7 = new Button();
+            panel4 = new Panel();
+            button3 = new Button();
             panel12 = new Panel();
             button10 = new Button();
             SideBarTimer = new System.Windows.Forms.Timer(components);
@@ -65,13 +65,13 @@
             panel7.SuspendLayout();
             panel6.SuspendLayout();
             panel3.SuspendLayout();
-            panel4.SuspendLayout();
             salepainel.SuspendLayout();
             panel10.SuspendLayout();
             panel5.SuspendLayout();
             panel11.SuspendLayout();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            panel4.SuspendLayout();
             panel12.SuspendLayout();
             SuspendLayout();
             // 
@@ -218,34 +218,6 @@
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(189, 217, 223);
-            panel4.Controls.Add(button3);
-            panel4.Location = new Point(3, 275);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(266, 75);
-            panel4.TabIndex = 3;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Transparent;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.wired_lineal_21_avatar;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, -41);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(266, 163);
-            button3.TabIndex = 2;
-            button3.Text = "        User";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // salepainel
             // 
@@ -401,6 +373,34 @@
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(189, 217, 223);
+            panel4.Controls.Add(button3);
+            panel4.Location = new Point(3, 275);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(266, 75);
+            panel4.TabIndex = 3;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Transparent;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
+            button3.Image = Properties.Resources.wired_lineal_21_avatar;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(0, -41);
+            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Name = "button3";
+            button3.Size = new Size(266, 163);
+            button3.TabIndex = 2;
+            button3.Text = "        User";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(189, 217, 223);
@@ -453,6 +453,7 @@
             Name = "FrmHomePrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmHomePrincipal";
+            FormClosed += FrmHomePrincipal_FormClosed;
             Load += FrmHomePrincipal_Load;
             SideBar.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -462,13 +463,13 @@
             panel7.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            panel4.ResumeLayout(false);
             salepainel.ResumeLayout(false);
             panel10.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel8.ResumeLayout(false);
             panel9.ResumeLayout(false);
+            panel4.ResumeLayout(false);
             panel12.ResumeLayout(false);
             ResumeLayout(false);
         }

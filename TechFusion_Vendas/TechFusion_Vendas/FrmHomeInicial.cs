@@ -11,8 +11,8 @@ namespace TechFusion_Vendas
             lavi.ShowDialog();
         }
 
-        
-        
+
+
 
         private void FrmHomeInicial_Load(object sender, EventArgs e)
         {
@@ -98,6 +98,11 @@ namespace TechFusion_Vendas
             Frmexplicacao exp = new Frmexplicacao();
             this.Hide();
             exp.ShowDialog();
+        }
+
+        private void FrmHomeInicial_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

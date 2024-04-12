@@ -99,5 +99,10 @@ namespace TechFusion_Vendas
                 }
             }
         }
+
+        private void FrmUserInicial_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

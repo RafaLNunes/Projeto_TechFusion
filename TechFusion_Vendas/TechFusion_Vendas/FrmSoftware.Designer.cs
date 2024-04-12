@@ -121,6 +121,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // HomePainel
             // 
@@ -160,6 +161,7 @@
             button5.Text = "        How it works";
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel6
             // 
@@ -187,6 +189,7 @@
             button4.Text = "        About Us";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel3
             // 
@@ -214,6 +217,7 @@
             button2.Text = "        Home";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // salepainel
             // 
@@ -255,6 +259,7 @@
             button8.Text = "        Cloud";
             button8.TextAlign = ContentAlignment.MiddleLeft;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel5
             // 
@@ -282,6 +287,7 @@
             button1.Text = "        Redes";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel11
             // 
@@ -309,6 +315,7 @@
             button9.Text = "        Hardware";
             button9.TextAlign = ContentAlignment.MiddleLeft;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // panel8
             // 
@@ -336,6 +343,7 @@
             button6.Text = "        Software";
             button6.TextAlign = ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel9
             // 
@@ -363,6 +371,7 @@
             button7.Text = "        Sale";
             button7.TextAlign = ContentAlignment.MiddleLeft;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // panel4
             // 
@@ -390,6 +399,7 @@
             button3.Text = "        User";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // panel12
             // 
@@ -417,6 +427,7 @@
             button10.Text = "        Setting";
             button10.TextAlign = ContentAlignment.MiddleLeft;
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // SideBarTimer
             // 
@@ -426,10 +437,12 @@
             // HomeTimer
             // 
             HomeTimer.Interval = 2;
+            HomeTimer.Tick += HomeTimer_Tick;
             // 
             // SaleTimer
             // 
             SaleTimer.Interval = 2;
+            SaleTimer.Tick += SaleTimer_Tick;
             // 
             // FrmSoftware
             // 

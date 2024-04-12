@@ -161,5 +161,10 @@ namespace TechFusion_Vendas
             this.Hide();
             setting.ShowDialog();
         }
+
+        private void FrmHomePrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

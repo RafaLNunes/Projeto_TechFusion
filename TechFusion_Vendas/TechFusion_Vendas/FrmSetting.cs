@@ -111,5 +111,64 @@ namespace TechFusion_Vendas
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmHomePrincipal prin = new FrmHomePrincipal();
+            this.Hide();
+            prin.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmExplicacaoprincipal exp = new FrmExplicacaoprincipal();
+            this.Hide();
+            exp.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrmSoftware soft = new FrmSoftware();
+            this.Hide();
+            soft.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRedes rede = new FrmRedes();
+            this.Hide();
+            rede.ShowDialog();
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            FrmHardware hardware = new FrmHardware();
+            this.Hide();
+            hardware.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FrmCloud cloud = new FrmCloud();
+            this.Hide();
+            cloud.ShowDialog();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmUserPrincipal user = new FrmUserPrincipal();
+            this.Hide();
+            user.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FrmSetting setting = new FrmSetting();
+            this.Hide();
+            setting.ShowDialog();
+
+        }
     }
 }
