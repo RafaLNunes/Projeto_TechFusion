@@ -44,6 +44,7 @@ namespace TechFusion_Vendas
         {
             if (sidebarbool)
             {
+                painelflow.Width += 10;
                 SideBar.Width -= 10;
                 if (SideBar.Width == SideBar.MinimumSize.Width)
                 {
@@ -53,6 +54,8 @@ namespace TechFusion_Vendas
             }
             else
             {
+
+                painelflow.Width -= 10;
                 SideBar.Width += 10;
                 if (SideBar.Width == SideBar.MaximumSize.Width)
                 {
@@ -103,6 +106,11 @@ namespace TechFusion_Vendas
         private void FrmUserInicial_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panelLogIn_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

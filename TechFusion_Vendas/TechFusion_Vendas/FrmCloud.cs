@@ -166,7 +166,7 @@ namespace TechFusion_Vendas
 
         private void FrmCloud_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

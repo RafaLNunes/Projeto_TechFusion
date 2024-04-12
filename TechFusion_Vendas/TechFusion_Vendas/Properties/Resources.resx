@@ -121,8 +121,11 @@
   <data name="wired-lineal-1309-load-balancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-1309-load-balancer.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wired-lineal-153-bar-chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wired-lineal-153-bar-chart.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Design_sem_nome-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design_sem_nome-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Design sem nome (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sem nome (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wired-lineal-726-wireless-connection" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-726-wireless-connection.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,14 +136,23 @@
   <data name="icons8-configurações" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-configurações.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Design sem nome (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sem nome (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Design sem nome (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sem nome (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wired-lineal-63-home (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-63-home (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wired-lineal-187-suitcase" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wired-lineal-187-suitcase.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wired-lineal-112-book1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wired-lineal-112-book1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wired-lineal-1330-rest-api (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-1330-rest-api (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Design sem nome (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sem nome (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wired-lineal-21-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-21-avatar.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,25 +163,34 @@
   <data name="wired-lineal-1330-rest-api" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-1330-rest-api.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Design_sem_nome__7_-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design_sem_nome__7_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wired-lineal-57-server" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-57-server.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wired-lineal-1330-rest-api (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-1330-rest-api (4).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wired-lineal-153-bar-chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wired-lineal-153-bar-chart.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wired-lineal-112-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-112-book.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wired-lineal-27-globe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wired-lineal-27-globe.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wired-lineal-1331-repository" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-1331-repository.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wired-lineal-112-book1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wired-lineal-112-book1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wired-lineal-187-suitcase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wired-lineal-187-suitcase.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wired-lineal-1326-command-window-line (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wired-lineal-1326-command-window-line (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wired-lineal-27-globe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wired-lineal-27-globe.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="simsimsimsimsimsismsimsisimsimsismsimsimsims-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simsimsimsimsimsismsimsisimsimsismsimsimsims-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

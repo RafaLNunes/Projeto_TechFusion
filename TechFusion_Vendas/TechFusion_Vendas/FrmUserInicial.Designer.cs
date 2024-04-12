@@ -44,6 +44,16 @@
             button3 = new Button();
             SideBarTimer = new System.Windows.Forms.Timer(components);
             HomeTimer = new System.Windows.Forms.Timer(components);
+            painelflow = new FlowLayoutPanel();
+            panel2 = new Panel();
+            panelLogIn = new Panel();
+            textBox2 = new TextBox();
+            label4 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            textBox1 = new TextBox();
+            panel5 = new Panel();
+            button1 = new Button();
             SideBar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -52,6 +62,9 @@
             panel6.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            panelLogIn.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // SideBar
@@ -234,11 +247,132 @@
             HomeTimer.Interval = 2;
             HomeTimer.Tick += HomeTimer_Tick_1;
             // 
+            // painelflow
+            // 
+            painelflow.BackgroundImage = Properties.Resources.Design_sem_nome__2_1;
+            painelflow.Dock = DockStyle.Left;
+            painelflow.Location = new Point(270, 0);
+            painelflow.Name = "painelflow";
+            painelflow.Size = new Size(531, 828);
+            painelflow.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(204, 255, 249);
+            panel2.Controls.Add(panelLogIn);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(801, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(481, 828);
+            panel2.TabIndex = 6;
+            // 
+            // panelLogIn
+            // 
+            panelLogIn.Anchor = AnchorStyles.None;
+            panelLogIn.BackgroundImage = Properties.Resources.simsimsimsimsimsismsimsisimsimsismsimsimsims_removebg_preview__1_;
+            panelLogIn.BackgroundImageLayout = ImageLayout.Stretch;
+            panelLogIn.Controls.Add(textBox2);
+            panelLogIn.Controls.Add(label4);
+            panelLogIn.Controls.Add(label2);
+            panelLogIn.Controls.Add(label3);
+            panelLogIn.Controls.Add(textBox1);
+            panelLogIn.Controls.Add(panel5);
+            panelLogIn.Location = new Point(50, 133);
+            panelLogIn.Name = "panelLogIn";
+            panelLogIn.Size = new Size(385, 471);
+            panelLogIn.TabIndex = 0;
+            panelLogIn.Paint += panelLogIn_Paint;
+            // 
+            // textBox2
+            // 
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox2.BackColor = Color.FromArgb(216, 216, 216);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Location = new Point(67, 309);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(254, 20);
+            textBox2.TabIndex = 8;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(67, 264);
+            label4.Name = "label4";
+            label4.Size = new Size(145, 29);
+            label4.TabIndex = 7;
+            label4.Text = "PassWord";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Stencil", 32F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(93, 27);
+            label2.Name = "label2";
+            label2.Size = new Size(200, 64);
+            label2.TabIndex = 0;
+            label2.Text = "Log In";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(67, 165);
+            label3.Name = "label3";
+            label3.Size = new Size(145, 29);
+            label3.TabIndex = 6;
+            label3.Text = "UserName";
+            // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.BackColor = Color.FromArgb(216, 216, 216);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(67, 212);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(254, 20);
+            textBox1.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel5.BackColor = Color.Transparent;
+            panel5.Controls.Add(button1);
+            panel5.Location = new Point(112, 397);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(181, 55);
+            panel5.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Stencil", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(-58, -18);
+            button1.Name = "button1";
+            button1.Size = new Size(274, 89);
+            button1.TabIndex = 2;
+            button1.Text = "Log In";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // FrmUserInicial
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
             ClientSize = new Size(1282, 828);
+            Controls.Add(panel2);
+            Controls.Add(painelflow);
             Controls.Add(SideBar);
             Name = "FrmUserInicial";
             StartPosition = FormStartPosition.CenterScreen;
@@ -254,6 +388,10 @@
             panel6.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panelLogIn.ResumeLayout(false);
+            panelLogIn.PerformLayout();
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -274,5 +412,15 @@
         private Button button3;
         private System.Windows.Forms.Timer SideBarTimer;
         private System.Windows.Forms.Timer HomeTimer;
+        private FlowLayoutPanel painelflow;
+        private Panel panel2;
+        private Panel panelLogIn;
+        private Label label2;
+        private Panel panel5;
+        private Button button1;
+        private Label label4;
+        private Label label3;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
