@@ -1,19 +1,10 @@
 create database DataBase_TechFusion;
 use DataBase_TechFusion;
 
-create table fornecedor(
-	Cod_fornc int primary key auto_increment,
-    nome_fornc varchar(120),
-    Local_trabalho varchar(120)
-);
-
 create table produto(
 	Cod_prod int primary key auto_increment,
     Nome_prod varchar(70),
-    preco_prod float(10,2),
-    foto_prod varchar(200),
-    CFK_fornc int,
-    constraint FK_fornc foreign key (CFK_fornc) references fornecedor (Cod_fornc)
+    preco_prod float(10,2)
 );
 
 create table perfil(
@@ -48,9 +39,7 @@ create table Historico_pedidos(
 
 
 insert into perfil(cargo) values("ADM"), ("Gerente"), ("Cliente"),("Revendedor"),("Técnico");
-insert into fornecedor(nome_fornc, Local_trabalho) values ("Adam", "SESI"), ("Gabriel", "SENAI"), ("Rafael", "FIEP");
 
-select * from fornecedor;
 select * from produto;
 select * from perfil;
 select * from usuario;
