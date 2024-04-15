@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace TechFusion_Vendas
 {
     public partial class FrmUserInicial : Form
     {
+        ClConnection conn = new ClConnection();
         bool passwordchard;
         bool sidebarbool;
         bool homebool;
@@ -116,7 +118,23 @@ namespace TechFusion_Vendas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DataTable cod = conn.LogIn(textuser, textpassword);
 
+            MessageBox.Show($"Id logado: {cod.Rows[0][1].ToString()}");
+
+            if (Convert.ToInt32(cod.Rows[0][0]) > 0)
+            {
+                MessageBox.Show($"Bem vido {textuser.Text}");
+                FrmHomePrincipal hm = new FrmHomePrincipal();
+                this.Hide();
+                hm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Usuário invalido");
+                textuser.Text = String.Empty;
+                textpassword.Text = String.Empty;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

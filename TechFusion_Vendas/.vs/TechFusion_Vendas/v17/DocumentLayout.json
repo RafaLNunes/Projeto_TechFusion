@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmusersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmuserinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmuserinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\techfusion_vendas\\frmusersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmusersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\techfusion_vendas\\clconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\clconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmusersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmusersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|c:\\users\\aluno\\documents\\github\\projeto_techfusion\\techfusion_vendas\\techfusion_vendas\\frmuserinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FF0403F-E1E3-428A-9FF7-8DA3794790D4}|TechFusion_Vendas\\TechFusion_Vendas.csproj|solutionrelative:techfusion_vendas\\frmuserinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +35,62 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmUserInicial.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserInicial.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmUserInicial.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserInicial.cs",
+              "RelativeToolTip": "TechFusion_Vendas\\FrmUserInicial.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAADwv3UAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T15:37:40.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmUserInicial.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserInicial.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmUserInicial.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserInicial.cs [Projeto]",
+              "RelativeToolTip": "TechFusion_Vendas\\FrmUserInicial.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T15:37:36.789Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmUserSignUp.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserSignUp.cs",
+              "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmUserSignUp.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserSignUp.cs [Projeto]",
+              "RelativeToolTip": "TechFusion_Vendas\\FrmUserSignUp.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T14:20:21.865Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FrmUserSignUp.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserSignUp.cs",
               "RelativeDocumentMoniker": "TechFusion_Vendas\\FrmUserSignUp.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\FrmUserSignUp.cs",
               "RelativeToolTip": "TechFusion_Vendas\\FrmUserSignUp.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAcwK0AAAAPAAAA",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAQwLQAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T13:32:38.674Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ClConnection.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\ClConnection.cs",
               "RelativeDocumentMoniker": "TechFusion_Vendas\\ClConnection.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\Projeto_TechFusion\\TechFusion_Vendas\\TechFusion_Vendas\\ClConnection.cs",
               "RelativeToolTip": "TechFusion_Vendas\\ClConnection.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAmwGYAAAAYAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T15:27:06.76Z",
               "EditorCaption": ""

@@ -171,12 +171,18 @@ namespace TechFusion_Vendas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textpassword.Text == string.Empty)
+            if(textpassword.Text != String.Empty && textuser.Text != String.Empty && textname.Text != String.Empty && CBidade.Text != String.Empty && CBperfil.Text != String.Empty && clRouderpb1.Image != null)
             {
                 String Cam_origin = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(Cam_FT));
                 File.Copy(Cam_FT, Cam_origin, true);
                 conn.SignUp(textname, textuser, textpassword, Convert.ToInt32(CBidade.Text), CBperfil.SelectedIndex, Cam_origin);
-
+                MessageBox.Show("Cadastro efetuado com Sucesso\nRedirecionando para LogIn");
+                FrmUserInicial user = new FrmUserInicial();
+                user.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Faltou alguma informação\nColoque-as");
             }
         }
 
