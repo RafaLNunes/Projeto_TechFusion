@@ -12,7 +12,7 @@ namespace TechFusion_Vendas
     {
 
         public static String DB = "DataBase_TechFusion";
-        public static String server = "127.0.0.1";
+        public static String server = "localhost";
         public static String user = "root";
         public static String senha = "";
         public MySqlConnection connection = null;
@@ -22,6 +22,7 @@ namespace TechFusion_Vendas
         public MySqlConnection GetConnection()
         {
             connection = new MySqlConnection(STRConect);
+            connection.Open();
             return connection;
         }
 
@@ -65,7 +66,7 @@ namespace TechFusion_Vendas
             DataTable dt = new DataTable();
 
             connection = GetConnection();
-            connection.Open();
+            
 
             MySqlCommand cmd = new MySqlCommand(sql, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
@@ -74,6 +75,38 @@ namespace TechFusion_Vendas
             connection.Close();
 
             return dt;
+        }
+
+        public int SignUp(TextBox nome, TextBox username, TextBox password, int idade, int dexCBperfil, String cam_foto)
+        {
+            int reg = 0;
+
+            try
+            {
+                connection = GetConnection();
+
+                String name = nome.Text;
+                String senha = password.Text;
+                String user = username.Text;
+                Int32 cargo = dexCBperfil;
+
+                Int32 age = idade - DateTime.Now.Year;
+
+                string dat_reg = $"{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}"; // YYYY-MM-DD
+                string tim_reg = Convert.ToString(DateTime.Now.Hour) + ":" + Convert.ToString(DateTime.Now.Minute) + ":" + Convert.ToString(DateTime.Now.Second);// HH:MM:SS
+
+                String sql = $"insert into usuario (Nome_user, idade_user, foto_user, data_Registro, horario_Registro, UserName, senha, CFK_perfil) values ('{name}', {age}, '{cam_foto}','{dat_reg}', '{tim_reg}', '{username}', '{senha}', {cargo});";
+
+                MySqlCommand cmd = new MySqlCommand (sql, connection);
+                reg = Convert.ToInt32(cmd.ExecuteNonQuery());
+                connection.Close();
+                reg = 1;
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Erro na criação de Usuário"+ ex.Message);
+            }
+            return reg;
+
         }
 
     }

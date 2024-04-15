@@ -50,6 +50,16 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
             panel5 = new Panel();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            linkLabel1 = new LinkLabel();
+            label5 = new Label();
+            CBidade = new ComboBox();
+            textname = new TextBox();
+            CBperfil = new ComboBox();
             textuser = new TextBox();
             PBvisiblePassword = new PictureBox();
             textpassword = new TextBox();
@@ -59,9 +69,6 @@
             panel8 = new Panel();
             button1 = new Button();
             label2 = new Label();
-            CBperfil = new ComboBox();
-            textname = new TextBox();
-            CBidade = new ComboBox();
             SideBar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -299,6 +306,13 @@
             // 
             panel5.BackgroundImage = Properties.Resources.dasfghjkl_removebg_preview__1_;
             panel5.BackgroundImageLayout = ImageLayout.Zoom;
+            panel5.Controls.Add(label8);
+            panel5.Controls.Add(label7);
+            panel5.Controls.Add(label6);
+            panel5.Controls.Add(label3);
+            panel5.Controls.Add(label4);
+            panel5.Controls.Add(linkLabel1);
+            panel5.Controls.Add(label5);
             panel5.Controls.Add(CBidade);
             panel5.Controls.Add(textname);
             panel5.Controls.Add(CBperfil);
@@ -313,6 +327,126 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(637, 530);
             panel5.TabIndex = 0;
+            panel5.Paint += panel5_Paint;
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(382, 218);
+            label8.Name = "label8";
+            label8.Size = new Size(94, 29);
+            label8.TabIndex = 19;
+            label8.Text = "Cargo";
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(35, 442);
+            label7.Name = "label7";
+            label7.Size = new Size(145, 29);
+            label7.TabIndex = 18;
+            label7.Text = "PassWord";
+            // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(35, 352);
+            label6.Name = "label6";
+            label6.Size = new Size(145, 29);
+            label6.TabIndex = 17;
+            label6.Text = "UserName";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(35, 259);
+            label3.Name = "label3";
+            label3.Size = new Size(264, 29);
+            label3.TabIndex = 16;
+            label3.Text = "Ano de Nascimento";
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Stencil", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(35, 168);
+            label4.Name = "label4";
+            label4.Size = new Size(215, 29);
+            label4.TabIndex = 8;
+            label4.Text = "Nome Completo";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel1.Location = new Point(495, 492);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(104, 23);
+            linkLabel1.TabIndex = 15;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Clique Aqui";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(382, 492);
+            label5.Name = "label5";
+            label5.Size = new Size(116, 23);
+            label5.TabIndex = 14;
+            label5.Text = "Já tem Conta";
+            // 
+            // CBidade
+            // 
+            CBidade.BackColor = Color.FromArgb(216, 216, 216);
+            CBidade.FlatStyle = FlatStyle.Flat;
+            CBidade.FormattingEnabled = true;
+            CBidade.Location = new Point(35, 299);
+            CBidade.Name = "CBidade";
+            CBidade.Size = new Size(332, 28);
+            CBidade.TabIndex = 13;
+            // 
+            // textname
+            // 
+            textname.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textname.BackColor = Color.FromArgb(216, 216, 216);
+            textname.BorderStyle = BorderStyle.None;
+            textname.Location = new Point(35, 218);
+            textname.Name = "textname";
+            textname.Size = new Size(332, 20);
+            textname.TabIndex = 12;
+            // 
+            // CBperfil
+            // 
+            CBperfil.BackColor = Color.FromArgb(216, 216, 216);
+            CBperfil.FlatStyle = FlatStyle.Flat;
+            CBperfil.FormattingEnabled = true;
+            CBperfil.Location = new Point(382, 259);
+            CBperfil.Name = "CBperfil";
+            CBperfil.Size = new Size(233, 28);
+            CBperfil.TabIndex = 11;
             // 
             // textuser
             // 
@@ -352,8 +486,8 @@
             clRouderpb1.BackColor = Color.Transparent;
             clRouderpb1.Location = new Point(373, 12);
             clRouderpb1.Name = "clRouderpb1";
-            clRouderpb1.Size = new Size(228, 226);
-            clRouderpb1.SizeMode = PictureBoxSizeMode.Zoom;
+            clRouderpb1.Size = new Size(203, 203);
+            clRouderpb1.SizeMode = PictureBoxSizeMode.StretchImage;
             clRouderpb1.TabIndex = 6;
             clRouderpb1.TabStop = false;
             // 
@@ -403,6 +537,7 @@
             button1.TabIndex = 2;
             button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
@@ -416,36 +551,6 @@
             label2.Size = new Size(332, 89);
             label2.TabIndex = 1;
             label2.Text = "Sign Up";
-            // 
-            // CBperfil
-            // 
-            CBperfil.BackColor = Color.FromArgb(216, 216, 216);
-            CBperfil.FlatStyle = FlatStyle.Flat;
-            CBperfil.FormattingEnabled = true;
-            CBperfil.Location = new Point(382, 259);
-            CBperfil.Name = "CBperfil";
-            CBperfil.Size = new Size(233, 28);
-            CBperfil.TabIndex = 11;
-            // 
-            // textname
-            // 
-            textname.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textname.BackColor = Color.FromArgb(216, 216, 216);
-            textname.BorderStyle = BorderStyle.None;
-            textname.Location = new Point(35, 218);
-            textname.Name = "textname";
-            textname.Size = new Size(332, 20);
-            textname.TabIndex = 12;
-            // 
-            // CBidade
-            // 
-            CBidade.BackColor = Color.FromArgb(216, 216, 216);
-            CBidade.FlatStyle = FlatStyle.Flat;
-            CBidade.FormattingEnabled = true;
-            CBidade.Location = new Point(35, 299);
-            CBidade.Name = "CBidade";
-            CBidade.Size = new Size(332, 28);
-            CBidade.TabIndex = 13;
             // 
             // FrmUserSignUp
             // 
@@ -513,5 +618,12 @@
         private ComboBox CBperfil;
         private ComboBox CBidade;
         private TextBox textname;
+        private LinkLabel linkLabel1;
+        private Label label5;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label3;
+        private Label label4;
     }
 }

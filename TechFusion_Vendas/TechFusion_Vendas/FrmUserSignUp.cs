@@ -12,6 +12,7 @@ namespace TechFusion_Vendas
 {
     public partial class FrmUserSignUp : Form
     {
+        ClConnection conn = new ClConnection();
         bool passwordchard;
         bool sidebarbool;
         bool homebool;
@@ -20,10 +21,21 @@ namespace TechFusion_Vendas
         public FrmUserSignUp()
         {
             InitializeComponent();
+
         }
 
         private void FrmUserSignUp_Load(object sender, EventArgs e)
         {
+            int ano_atual = DateTime.Now.Year;
+            for (int i = ano_atual; i > ano_atual - 100; i--)
+            {
+                CBidade.Items.Add(i);
+            }
+
+            CBperfil.DataSource = conn.Obter_dados("select * from perfil");
+            CBperfil.DisplayMember = "cargo";
+            CBperfil.ValueMember = "Cod_perfil";
+            CBperfil.Text = String.Empty;
 
         }
 
@@ -148,6 +160,29 @@ namespace TechFusion_Vendas
                 PBvisiblePassword.Image = ListaVisiblepass.Images[0];
 
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmUserInicial user = new FrmUserInicial();
+            this.Hide();
+            user.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textpassword.Text == string.Empty)
+            {
+                String Cam_origin = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileName(Cam_FT));
+                File.Copy(Cam_FT, Cam_origin, true);
+                conn.SignUp(textname, textuser, textpassword, Convert.ToInt32(CBidade.Text), CBperfil.SelectedIndex, Cam_origin);
+
+            }
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

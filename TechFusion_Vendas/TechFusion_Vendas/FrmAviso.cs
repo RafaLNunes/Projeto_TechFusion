@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -117,12 +118,15 @@ namespace TechFusion_Vendas
         private void button1_Click(object sender, EventArgs e)
         {
             ClConnection conn = new ClConnection();
-            if (conn.GetConnection() != null)
+            try
             {
-                MessageBox.Show("Conexão Estabelecida");
-                this.Hide();
+                if (conn.GetConnection() != null)
+                {
+                    MessageBox.Show("Conexão Estabelecida");
+                    this.Hide();
+                }
             }
-            else
+            catch (Exception ex)
             {
                 MessageBox.Show("Foi computado que a conexão com a DataBase não funcionou\nPor isso a Aplicação será Fechada");
                 Application.Exit();

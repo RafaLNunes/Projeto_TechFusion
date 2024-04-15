@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechFusion_Vendas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+297613a9f337810d4d4b2da987056398248bfc7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bbc9fbeba9e79f8ee215bc62974b841c11ceedb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechFusion_Vendas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechFusion_Vendas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

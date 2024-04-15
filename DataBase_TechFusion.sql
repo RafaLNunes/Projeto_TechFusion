@@ -6,7 +6,7 @@ create table produto(
     Nome_prod varchar(70),
     preco_prod float(10,2)
 );
-
+			
 create table perfil(
 	Cod_perfil int primary key auto_increment,
     cargo varchar(70)
@@ -21,9 +21,7 @@ create table usuario(
     horario_Registro time,
     UserName varchar(70),
     senha varchar(90),
-    CFK_prod int,
     CFK_perfil int,
-    constraint FK_prod foreign key (CFK_prod) references produto(Cod_prod),
     constraint FK_perfil foreign key (CFK_perfil) references perfil(Cod_perfil)
 );
 
