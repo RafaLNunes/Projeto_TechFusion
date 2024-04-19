@@ -44,9 +44,10 @@ namespace TechFusion_Vendas
 
                 MySqlCommand cmd = new MySqlCommand(sql, com);
                 cmd.Parameters.AddWithValue("@password", Password);
-                cmd.Parameters.AddWithValue("@user", user);
+                cmd.Parameters.AddWithValue("@user", UserName);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                 adapter.Fill(reg);
+                com.Close();
             }
             catch(Exception ex)
             {
